@@ -1,4 +1,6 @@
-/* Base styles */
+/* ------------------ */
+/* Base Styles        */
+/* ------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -17,14 +19,18 @@ h1, h2, h3 {
   color: #EAEAEA;
 }
 
-/* Layout */
+/* ------------------ */
+/* Layout             */
+/* ------------------ */
 .container {
-  width: 70%;
+  width: 85%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Header */
+/* ------------------ */
+/* Header             */
+/* ------------------ */
 .site-header {
   background-color: #F8F6F4;
   padding: 20px 0;
@@ -38,6 +44,8 @@ h1, h2, h3 {
 
 .logo {
   font-size: 1.8rem;
+  font-weight: 700;
+  color: #1E1E1E;
 }
 
 nav ul {
@@ -50,25 +58,56 @@ nav a {
   text-decoration: none;
   color: #1E1E1E;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-/* Hero */
+nav a:hover {
+  color: #6C63FF;
+}
+
+/* ------------------ */
+/* Hero Section       */
+/* ------------------ */
 .hero {
   background-color: #6C63FF;
   padding: 80px 0;
-  text-align: center;
 }
 
-.hero h2 {
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Text left, image right */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #F8F6F4;
 }
 
-.hero p {
+.hero-text p {
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  color: #EAEAEA;
 }
 
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #F8F6F4;
+}
+
+/* ------------------ */
+/* Buttons            */
+/* ------------------ */
 .btn {
   display: inline-block;
   background-color: #F8F6F4;
@@ -76,60 +115,69 @@ nav a {
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #6C63FF;
+  background-color: #1E1E1E;
   color: #F8F6F4;
 }
 
-/* Services */
+/* ------------------ */
+/* Services / Case Studies */
+/* ------------------ */
 .services {
-  display: flex;
-  flex-direction: column; /* Stack top-to-bottom */
-  align-items: center;
-  gap: 30px;
   padding: 60px 0;
+  text-align: center;
 }
 
 .cards {
   display: flex;
-  flex-direction: column; /* Vertical layout */
+  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 20px;
-  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .card {
   background: #121212;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  width: 90%;
-  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 25px;
+  width: 280px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Card images */
 .card img {
-  width: 80%;              /* Larger image */
-  max-width: 300px;        /* Keeps proportion */
+  width: 100%;
+  max-width: 220px;
   height: auto;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-  display: block;
+  margin: 0 auto 15px;
+  border-radius: 8px;
 }
 
-/* About */
+.card h3 {
+  color: #EAEAEA;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* ------------------ */
+/* About Section      */
+/* ------------------ */
 .about {
-  padding: 60px 0;
   background-color: #6C63FF;
+  padding: 60px 0;
   text-align: center;
 }
 
@@ -140,17 +188,21 @@ nav a {
   gap: 20px;
 }
 
+.about-content img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #F8F6F4;
+}
+
 .about-content p {
   max-width: 800px;
+  color: #F8F6F4;
 }
 
-.about-content img {
-  width: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/* Contact */
+/* ------------------ */
+/* Contact Section    */
+/* ------------------ */
 .contact {
   padding: 60px 0;
   text-align: center;
@@ -173,7 +225,22 @@ nav a {
   font-size: 1rem;
 }
 
-/* Footer */
+.contact-form button {
+  background-color: #6C63FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.contact-form button:hover {
+  background-color: #5750d3;
+}
+
+/* ------------------ */
+/* Footer             */
+/* ------------------ */
 .site-footer {
   background-color: #F8F6F4;
   text-align: center;
@@ -193,6 +260,10 @@ nav a {
 .license-list li {
   margin-bottom: 4px;
 }
+
+/* ------------------ */
+/* Responsive Design  */
+/* ------------------ */
 @media (max-width: 900px) {
   .container {
     width: 95%;
@@ -200,8 +271,8 @@ nav a {
 
   .site-header .container {
     flex-direction: column;
-    gap: 10px;
     text-align: center;
+    gap: 10px;
   }
 
   nav ul {
@@ -209,31 +280,35 @@ nav a {
     justify-content: center;
   }
 
-  .hero {
-    padding: 60px 20px;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
-    max-width: 90%;
-    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .card img {
-    width: 70%;
-    max-width: 250px;
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
   }
 
-  .about-content p {
-    padding: 0 15px;
-    font-size: 1rem;
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-content img {
+    width: 120px;
   }
 
   .contact-form {
@@ -241,54 +316,13 @@ nav a {
   }
 }
 
-/* For phones (under ~600px) */
-@media (max-width: 600px) {
-  body {
-    font-size: 0.95rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .hero h2 {
-    font-size: 1.7rem;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
+@media (max-width: 500px) {
   .btn {
     padding: 10px 20px;
-    font-size: 0.95rem;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .card img {
-    width: 80%;
-    max-width: 220px;
-  }
-
-  .about {
-    padding: 40px 10px;
-  }
-
-  .about-content img {
-    width: 150px;
-  }
-
-  .contact {
-    padding: 40px 10px;
+    font-size: 0.9rem;
   }
 
   .site-footer {
-    font-size: 0.85rem;
-    padding: 15px;
+    font-size: 0.8rem;
   }
 }
