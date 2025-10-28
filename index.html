@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saria's Portfolio</title>
   <meta name="description" content="Saria Marshall — UX/UI Designer. Strong communicator and good candidate for user-centered design roles.">
-  <meta name="keywords" content="UX designer, UI designer, user research, good candidate, portfolio">
+  <meta name="keywords" content="UX designer, UI designer, user research, portfolio, Charlotte UX designer">
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
-      <h1 class="logo"></h1>
+      <h1 class="logo"> </h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -26,79 +26,88 @@
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h2>Hi, I'm Saria.</h2>
-        <p>UX/UI Designer passionate about crafting intuitive, user-centered digital experiences.</p>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Hi, I'm Saria.</h2>
+          <p>I’m a UX/UI Designer passionate about crafting user-centered digital experiences that blend functionality and aesthetics.</p>
+        </div>
+        <img src="images/Snapchat-2026946408.jpg" alt="Saria Marshall" class="profile-img" />
       </div>
-      <img src="images/Snapchat-2026946408.jpg" alt="Saria Marshall" class="profile-img" />
     </div>
   </section>
 
+  <!-- CASE STUDIES -->
   <section class="services" id="services">
     <div class="container">
       <h2>Case Studies</h2>
       <div class="cards">
-        <!-- Card 1 -->
+        
         <div class="card">
           <h3>Centered Mind Counseling</h3>
-          <img src="images/Centered-Mind-Counseling-10-10-2025_04_32_PM.png" alt="Centered Mind Counseling" />
-          <p>The Centered Mind Counseling website redesign focused on capturing a wholesome and kind approach to my mother's private practice. I designed, coded, and published this website as my first solo project.</p>
+          <img src="images/Centered-Mind-Counseling-10-10-2025_04_32_PM.png" alt="Centered Mind Counseling Project" />
+          <p>The Centered Mind Counseling website redesign captures a wholesome and kind approach to my mother’s private therapy practice. I designed, coded, and published this website as my first solo project.</p>
         </div>
 
-        <!-- Card 2 -->
         <div class="card">
           <h3>PAWS of Austin</h3>
-          <img src="images/Screenshot 2025-01-16 194207.png" alt="PAWS of Austin" />
-          <p>The PAWS of Austin redesign enhanced the online experience for a nonprofit rescuing and rehoming large-breed dogs, solving issues with outdated design, poor navigation, and unclear donation flows.</p>
+          <img src="images/Screenshot 2025-01-16 194207.png" alt="PAWS of Austin Project" />
+          <p>This redesign enhances the online experience for a nonprofit rescuing and rehoming large-breed dogs. The updated site improves navigation, structure, and donation flow.</p>
         </div>
 
-        <!-- Card 3 -->
         <div class="card">
           <h3>QuestLink</h3>
-          <img src="images/Screenshot 2025-04-23 153128.png" alt="QuestLink" />
-          <p>QuestLink is a local social networking app for TTRPG and board game fans. It connects players, game masters, and hosts to make organizing games easier and foster a sense of community.</p>
+          <img src="images/Screenshot 2025-04-23 153128.png" alt="QuestLink Project" />
+          <p>QuestLink is a social networking app for tabletop and board game enthusiasts. It connects players, game masters, and event hosts to organize games and foster community connections.</p>
         </div>
 
-        <!-- Card 4 -->
         <div class="card">
           <h3>Money Moves</h3>
-          <img src="images/Screenshot 2025-04-23 153437.png" alt="Money Moves" />
-          <p>Money Moves is a financial literacy app that teaches users how to build credit and manage money through interactive lessons, budgeting tools, and progress tracking.</p>
+          <img src="images/Screenshot 2025-04-23 153437.png" alt="Money Moves Project" />
+          <p>Money Moves is a financial literacy app that helps users build credit, budget effectively, and develop long-term financial confidence through interactive education.</p>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about-content">
       <div class="about-text">
         <h2>About Me</h2>
-        <p>I'm a UX/UI designer passionate about creating user-centered digital experiences that balance functionality and aesthetics.</p>
+        <p>I’m Saria, a UX/UI Designer based in Charlotte, NC. My approach focuses on empathy, clarity, and simplicity — designing intuitive digital experiences that help users feel confident and connected.</p>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <h2>Let’s Talk</h2>
-      <form class="contact-form" action="mailto:saria.marshall@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Your message..." rows="5"></textarea>
+      <form class="contact-form" action="https://formsubmit.co/saria.marshall@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
         <button type="submit" class="btn">Send Message</button>
+
+        <!-- Hidden fields for redirect and subject -->
+        <input type="hidden" name="_next" value="https://sariamarshall.github.io/thanks.html">
+        <input type="hidden" name="_subject" value="New Portfolio Message from Saria's Site!">
       </form>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <ul class="license-list">
-        <li>UNCC UX/UI graduate of 2025</li>
+        <li>UNCC UX/UI Graduate — Class of 2025</li>
       </ul>
     </div>
   </footer>
-
 </body>
 </html>
+
