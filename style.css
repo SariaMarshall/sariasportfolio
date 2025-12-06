@@ -331,4 +331,37 @@ nav a:hover {
   color: inherit;
   display: block;
 }
+.subpage-header {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #6C63FF;
+  color: white;
+}
+
+.case-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.case-container h2 {
+  margin-top: 40px;
+}
+
+.case-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 40px;
+  background: #6C63FF;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
 
