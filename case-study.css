@@ -1,0 +1,93 @@
+/* Case Study General Styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #111;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.cs-container {
+  width: 85%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cs-header {
+  background: #f7f7f7;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cs-logo a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cs-hero {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: -10px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-top: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+.cs-section {
+  padding: 60px 0;
+}
+
+.cs-section.alt {
+  background: #f9f9f9;
+}
+
+.cs-section h2 {
+  margin-bottom: 15px;
+}
+
+.full-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* Footer */
+.cs-footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cs-container {
+    width: 92%;
+  }
+
+  .hero-img, .full-img {
+    max-width: 100%;
+  }
+}
