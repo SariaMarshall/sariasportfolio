@@ -4,18 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Saria's Portfolio</title>
-  <meta name="description" content="Saria Marshall — UX/UI Designer. Strong communicator and good candidate for user-centered design roles.">
-  <meta name="keywords" content="UX designer, UI designer, user research, portfolio, Charlotte UX designer">
+
+  <meta name="description" content="Saria Marshall — UX/UI Designer." />
+  <meta name="keywords" content="UX designer, UI designer, portfolio" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header class="site-header">
     <div class="container">
-      <h1 class="logo"> </h1>
+      <h1 class="logo"></h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -26,7 +29,7 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -34,69 +37,57 @@
           <h2>Hi, I'm Saria.</h2>
           <p>I’m a UX/UI Designer passionate about crafting user-centered digital experiences that blend functionality and aesthetics.</p>
         </div>
-        <img src="images/sariam.png" class="profile-img" />
+        <img src="images/sariam.png" class="profile-img" alt="Saria Marshall">
       </div>
     </div>
   </section>
 
   <!-- CASE STUDIES -->
-<section class="services" id="services">
-  <div class="container">
-    <h2>Case Studies</h2>
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Case Studies</h2>
 
-    <div class="cards">
+      <div class="cards">
 
-      <!-- CARD 1 -->
-      <a href="centered-mind.html" class="card-link">
-        <div class="card">
-          <h3>Centered Mind Counseling</h3>
-          <img src="images/Centered-Mind-Counseling-10-10-2025_04_32_PM.png" alt="Centered Mind Counseling Project" />
-          <p>
-            The Centered Mind Counseling website redesign captures a wholesome and kind approach to my 
-            mother’s private therapy practice. I designed, coded, and published this website as my first 
-            solo project.
-          </p>
-        </div>
-      </a>
+        <!-- Centered Mind -->
+        <a href="centered-mind.html" class="card-link">
+          <div class="card">
+            <h3>Centered Mind Counseling</h3>
+            <img src="images/centeredmindfooter.png" alt="Centered Mind Counseling">
+            <p>A website redesign for a trauma-focused private practice — warm, welcoming, and centered on client trust.</p>
+          </div>
+        </a>
 
-      <!-- CARD 2 -->
-      <a href="paws-of-austin.html" class="card-link">
-  <div class="card">
-    <h3>PAWS of Austin</h3>
-    <img src="images/Screenshot 2025-01-16 194207.png" alt="PAWS of Austin" />
-    <p>The Paws of Austin website redesign focused on enhancing the online experience for a nonprofit dedicated to rescuing and rehoming large-breed dogs.</p>
-  </div>
-</a>
+        <!-- PAWS of Austin -->
+        <a href="paws-of-austin.html" class="card-link">
+          <div class="card">
+            <h3>PAWS of Austin</h3>
+            <img src="images/pawsofaustinheader.png" alt="PAWS of Austin">
+            <p>A redesign for a large-breed dog rescue nonprofit to improve adoption clarity, donation flow, and engagement.</p>
+          </div>
+        </a>
 
+        <!-- Money Moves -->
+        <a href="money-moves.html" class="card-link">
+          <div class="card">
+            <h3>Money Moves</h3>
+            <img src="images/moneymovesfinal.png" alt="Money Moves App">
+            <p>A financial literacy app helping people understand credit, budgeting, and money management with user-friendly flows.</p>
+          </div>
+        </a>
 
-      <!-- CARD 3 -->
-      <a href="money-moves.html" class="card-link">
-        <div class="card">
-          <h3>Money Moves</h3>
-          <img src="images/money-moves.png" alt="Money Moves App" />
-          <p>
-            Money Moves is a financial literacy app teaching users how to build credit and understand 
-            money management. I developed the concept, user flows, and UX structure.
-          </p>
-        </div>
-      </a>
+        <!-- QuestLink -->
+        <a href="questlink.html" class="card-link">
+          <div class="card">
+            <h3>QuestLink</h3>
+            <img src="images/questlinkheader.png" alt="QuestLink App">
+            <p>A social platform connecting tabletop RPG players through group discovery, hosting, and event collaboration.</p>
+          </div>
+        </a>
 
-      <!-- CARD 4 -->
-      <a href="questlink.html" class="card-link">
-        <div class="card">
-          <h3>QuestLink</h3>
-          <img src="images/questlink.png" alt="QuestLink App" />
-          <p>
-            QuestLink is a social platform connecting tabletop RPG and board game players in their local 
-            communities. I designed low-fidelity prototypes and feature flows.
-          </p>
-        </div>
-      </a>
-
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
@@ -116,11 +107,11 @@
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message..." rows="5" required></textarea>
+
         <button type="submit" class="btn">Send Message</button>
 
-        <!-- Hidden fields for redirect and subject -->
         <input type="hidden" name="_next" value="https://sariamarshall.github.io/thanks.html">
-        <input type="hidden" name="_subject" value="New Portfolio Message from Saria's Site!">
+        <input type="hidden" name="_subject" value="New Portfolio Message!">
       </form>
     </div>
   </section>
@@ -133,6 +124,8 @@
       </ul>
     </div>
   </footer>
+
 </body>
 </html>
+
 
