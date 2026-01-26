@@ -377,5 +377,20 @@ nav a:hover {
 .card h3 {
   color: #ffffff !important;
 }
+.case-study {
+  width: 100%;
+  padding: 4rem 1rem;
+}
+
+.case-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-study h2,
+.case-study h3,
+.case-study p {
+  text-align: left;
+}
 
 
